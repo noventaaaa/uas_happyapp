@@ -1,14 +1,14 @@
-package com.example.uas_hobbyapp
+package com.example.uas_hobbyapp.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.uas_hobbyapp.R
 
 
-class NewsListFragment : Fragment() {
-
+class LoginFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,14 +22,14 @@ class NewsListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_news_list, container, false)
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
     companion object {
 
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            NewsListFragment().apply {
+            LoginFragment().apply {
                 arguments = Bundle().apply {
 
                 }
